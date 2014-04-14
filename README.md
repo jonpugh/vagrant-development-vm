@@ -38,19 +38,23 @@ in an attempt to make this as simple as possible. -@jonpugh</em>
 
 0. Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://www.vagrantup.com/downloads.html).
 
-0.1 Install NFS.
+  0.1 Install NFS.
 
   This Vagrantfile uses NFS to mount your Host folder in the Guest. MacOSX comes with it built in.
   To install in ubuntu:
-  ```sh
+
+    ```sh
     you@host ~ $ sudo apt-get install nfs-kernel-server nfs-common portmap
     ```
     
 1. Get this repo and all sub-repos. You can do this in one command using the `--recursive` option.
+
     ```sh
     you@host ~ $ git clone git@github.com:jonpugh/vagrant-development-vm.git --recursive
     ```
+
 2. Change Directory and Vagrant Up
+
     ```sh
     you@host ~ $ cd vagrant-development-vm.git
     you@host ~ $ vagrant up
