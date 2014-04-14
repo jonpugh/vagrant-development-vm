@@ -63,6 +63,8 @@ in an attempt to make this as simple as possible. -@jonpugh</em>
     The first time you do this it will download the [precise-vbox-4.2.18.2](http://fattony.zivtech.com/files/precise-vbox-4.2.18.2.box) 
     Vagrant box from Zivtech's Server. This may take a while depending on your bandwidth.
     
+    Once that's done, it will provision the server according to the puppet modules. This will also take a long time.
+    
 3. Coming soon... 
   Vagrant still doesn't see nsfd so I'm rebooting to see if that fixes it.
 
