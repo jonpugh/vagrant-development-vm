@@ -31,6 +31,33 @@ You should now have a working Virtual Server.
 
 The default server hostname is `local` and the default IP is `33.33.33.40`.
 
+## Installation Instructions
+
+<em>I am walking through and testing the instructions and am going to provide exact commands 
+in an attempt to make this as simple as possible. -@jonpugh</em>
+
+0. Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](http://www.vagrantup.com/downloads.html).
+
+0.1 Install nfsd.
+
+  
+1. Get this repo and all sub-repos. You can do this in one command using the `--recursive` option.
+    ```sh
+    you@host ~ $ git clone git@github.com:jonpugh/vagrant-development-vm.git --recursive
+    ```
+2. Change Directory and Vagrant Up
+    ```sh
+    you@host ~ $ cd vagrant-development-vm.git
+    you@host ~ $ vagrant up
+    ```
+
+    The first time you do this it will download the [precise-vbox-4.2.18.2](http://fattony.zivtech.com/files/precise-vbox-4.2.18.2.box) 
+    Vagrant box from Zivtech's Server. This may take a while depending on your bandwidth.
+    
+3. Coming soon... 
+  Vagrant still doesn't see nsfd so I'm rebooting to see if that fixes it.
+
+
 ## Issues
 
 Vagrant tries to mount a shared NFS directory to the host machine (the physical
